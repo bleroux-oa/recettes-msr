@@ -1,6 +1,7 @@
 SELECT
   {version}
   s.lkp_key_lma_sample,
+  s.ak_key_msr_sample,
   -- COUNT(DISTINCT s.ak_key_msr_sample) AS nb_msr_sample
   COUNT(DISTINCT s.id_msr_sample) AS nb_msr_sample
 FROM
@@ -23,7 +24,8 @@ WHERE
   AND r.sys_flg_active
 GROUP BY
   {version}
-  s.lkp_key_lma_sample
+  s.lkp_key_lma_sample,
+  s.ak_key_msr_sample
 HAVING
   nb_msr_sample > 1
 ORDER BY
