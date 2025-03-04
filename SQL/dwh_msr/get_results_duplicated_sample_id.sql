@@ -1,6 +1,6 @@
 SELECT
   {version}
-  s.lkp_key_lma_sample,
+  r.sample_id,
   COUNT(DISTINCT s.id_msr_sample) AS nb_msr_sample
   -- s.lkp_key_lma_sample,
   -- r.sample_id as results_sample_id,
@@ -27,8 +27,8 @@ WHERE
 
 GROUP BY
   {version}
-  s.lkp_key_lma_sample
-HAVING
-  nb_msr_sample > 1
+  r.sample_id
+-- HAVING nb_msr_sample > 1
 ORDER BY
   nb_msr_sample desc
+
