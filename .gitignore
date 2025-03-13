@@ -2,4 +2,4 @@
 /Data/
 
 # Ignore venv 
-/msr_venv/
+*venv*
