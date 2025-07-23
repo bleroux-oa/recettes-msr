@@ -1,5 +1,6 @@
 # Ignore data 
-/Data/
+Data/
+Data_msr_v2/
 
 # Ignore venv 
 *venv*
