@@ -1,5 +1,6 @@
 SELECT DISTINCT
  ak_key_msr_sample as id ,
+ source_code,
 sample_type, 
 lkp_key_lma_sample as external_id,
 sample_code, lkp_cod_rwm_batch as fabrication_code,

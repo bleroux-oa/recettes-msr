@@ -1,5 +1,5 @@
 SELECT DISTINCT
--- id_msr_test -- If included, creates massive gap between DWH and MS (due to quasi duplicates)
+-- id_msr_test -- If included, creates massive gap between DWH and MS (due to quasi duplicates). UPDATED : Was fixed
 ak_key_msr_test as id ,
 lkp_lma_test as external_id,
 lkp_key_msr_sample as tested_sample_id,
